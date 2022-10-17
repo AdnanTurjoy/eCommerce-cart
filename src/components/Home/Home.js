@@ -6,7 +6,7 @@ import Navbar from "../Navbar/Navbar";
 
 function Home(props) {
 
-
+  
 
   // getting current user function
   function GetCurrentUser(){
