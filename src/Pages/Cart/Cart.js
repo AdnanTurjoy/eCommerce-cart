@@ -25,6 +25,11 @@ function Cart(props) {
   };
   return (
     <div className="container mx-auto mt-10">
+       <div>
+        <h1 className="font-bold  text-4xl text-center uppercase p-3">Cart</h1>
+     </div>
+
+      
       <div>
         <Toaster loading="" position="top-right" reverseOrder={false} />
       </div>

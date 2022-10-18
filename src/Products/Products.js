@@ -5,28 +5,29 @@ import ReactLoading from "react-loading";
 import { useNavigate } from "react-router-dom";
 import { cartContext } from "../App";
 
+
 function Products({ getTotalCartAddedNumber }) {
   const navigate = useNavigate();
-  const {getSelectedCart} = useContext(cartContext);
+  const { getSelectedCart } = useContext(cartContext);
 
   const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
   // const [Product,setProduct] = useState({})
   // getting current user uid
-  function GetUserUid() {
-    const [uid, setUid] = useState(null);
-    useEffect(() => {
-      auth.onAuthStateChanged((user) => {
-        if (user) {
-          setUid(user.uid);
-        }
-      });
-    }, []);
-    return uid;
-  }
+  // function GetUserUid() {
+  //   const [uid, setUid] = useState(null);
+  //   useEffect(() => {
+  //     auth.onAuthStateChanged((user) => {
+  //       if (user) {
+  //         setUid(user.uid);
+  //       }
+  //     });
+  //   }, []);
+  //   return uid;
+  // }
 
-  const uid = GetUserUid();
+  // const uid = GetUserUid();
 
   // getting products function
   const getProducts = async () => {
@@ -50,8 +51,10 @@ function Products({ getTotalCartAddedNumber }) {
   };
 
   useEffect(() => {
+    
     setLoading(true);
     getProducts();
+   
   }, []);
 
   useEffect(() => {
@@ -74,6 +77,7 @@ function Products({ getTotalCartAddedNumber }) {
           width={100}
         />
       )}
+      
       <Product products={products} addToCart={addToCart} />
     </div>
   );

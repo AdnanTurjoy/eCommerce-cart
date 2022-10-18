@@ -18,7 +18,7 @@ function App() {
   return (
     <cartContext.Provider value={{selectedCart, getSelectedCart}}>
       <BrowserRouter>
-        {/* <Navbar /> */}
+     
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -28,6 +28,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
+      
     </cartContext.Provider>
   );
 }

@@ -4,7 +4,10 @@ import { TbCurrencyTaka } from "react-icons/tb";
 
 function Product({ products, addToCart }) {
   return (
+    
     <div className="grid grid-cols-4  gap-4 p-6">
+      
+       
       {products &&
         products.map((product, key) => {
           const { ID, title, description, category, image, price } = product;
