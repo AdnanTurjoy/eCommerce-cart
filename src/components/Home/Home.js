@@ -16,13 +16,13 @@ function Home(props) {
   return (
     <div>
       <Navbar user={user} cartNumber={cartNumber} />
-      <div className="bg-sky-300">
-        <img
-          src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-          className="object-fill h-38 w-[100%]"
-        />
+//       <div className="bg-sky-300">
+//         <img
+//           src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+//           className="object-fill h-38 w-[100%]"
+//         />
        
-      </div>
+//       </div>
      <div>
         <h1 className="font-bold  text-4xl text-center uppercase p-3">Products</h1>
      </div>
