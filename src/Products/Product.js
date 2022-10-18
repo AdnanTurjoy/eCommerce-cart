@@ -14,11 +14,12 @@ function Product({ products, addToCart }) {
               className="w-full max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
             >
               <Link
+              
                 to={"/product/" + ID}
                 state={{ title, price, description, image, category }}
               >
                 <img
-                  className="p-8 rounded-t-lg hover:-translate-y-1 hover:scale-110"
+                  className="p-8 rounded-t-lg hover:-translate-y-1 hover:scale-110 h-30"
                   src={image}
                   alt="product image"
                 />
@@ -35,12 +36,12 @@ function Product({ products, addToCart }) {
                     {price}৳
                   </span>
 
-                  <div
+                  <button
                     onClick={() => addToCart(product)}
-                    className=" cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    className=" bg-red-500 hover:bg-red-600 px-5 py-2 text-sm text-white uppercase"
                   >
                     Add to cart
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { HiShoppingCart } from "react-icons/hi";
+
 import { auth } from "../../Auth/firebaseConfig";
 
 function Navbar({ user, cartNumber }) {
