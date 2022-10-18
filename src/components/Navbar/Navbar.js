@@ -66,7 +66,7 @@ function Navbar({ user, cartNumber }) {
             </div>
             <div>
               <Link
-                to="/login"
+                to="/signup"
                 className="ml-3 inline-block text-sm px-4 py-2 mr-3 leading-none border rounded text-rose-700 border-black hover:bg-rose-600 hover:text-white mt-4 lg:mt-0"
               >
                 SIGN UP
