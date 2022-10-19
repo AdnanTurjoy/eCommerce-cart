@@ -16,10 +16,6 @@ function Home(props) {
   return (
     <div>
       <Navbar user={user} cartNumber={cartNumber} />
-//       <div className="bg-sky-300">
-//       
-       
-//       </div>
     <div>
         <h1 className="font-bold  text-4xl text-center uppercase p-3">Products</h1>
      </div>
