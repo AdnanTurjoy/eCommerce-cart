@@ -4,7 +4,7 @@ import Product from "./Product";
 import ReactLoading from "react-loading";
 import { useNavigate } from "react-router-dom";
 import { cartContext } from "../App";
-import Search from "../components/Search/Search";
+import Search from "../components/Search";
 
 function Products({ getTotalCartAddedNumber }) {
   const navigate = useNavigate();
